@@ -1,0 +1,38 @@
+/**
+Make toolbar go to the left below 650px
+Remove margin on containers
+*/
+@media screen and (max-width: 650px) {
+	.ui {
+		flex-direction: row!important;
+	}
+
+	.tabs-bar {
+		flex-direction: column!important;
+		margin: 0!important;
+	}
+
+	.tabs-bar__link {
+	    max-height: 10px!important;
+	}
+
+	.tabs-bar__link span {
+		display: none!important;
+	}
+
+	.tabs-bar__link .fa {
+		font-size: 20px!important;
+	}
+	
+	.tabs-bar__link.active {
+    	border-bottom: none!important;
+	}
+
+	.columns-area {
+		padding: 0!important;
+	}
+	
+	.react-swipeable-view-container .columns-area {
+		height: 100%!important;
+	}
+}

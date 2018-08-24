@@ -1,0 +1,52 @@
+/**
+- Make columns fill the screen at large sizes
+- Put nav bar on the side
+- Put avatar at top of nav bar
+*/
+.drawer.rl-hide {
+    width: 0!important;
+    margin-right: -10px!important;
+}
+
+.drawer.rl-hide .search {
+    display: none!important
+}
+
+.drawer {
+  width: 250px!important;
+  margin-left: 85px!important;
+}
+
+.drawer__header {
+  flex-direction: column!important;
+  width: 75px!important;
+  padding-top: 55px!important;
+  position: absolute;
+  left: 10px!important;
+  top: 10px!important;
+  z-index: 50!important;
+}
+
+.navigation-bar .account__avatar {
+  position: fixed!important;
+  top: 22px!important;
+  left: 28px!important;
+  z-index: 51!important;
+}
+
+.drawer__inner__mastodon { 
+  display: none!important; 
+}
+  .columns-area .column {
+          width: calc(80% / 3) !important;
+  }
+
+.drawer {
+      width: calc(20% - 95px)!important;
+  }
+
+.columns-area>div>.column,
+.columns-area>div>.mastodon-column-container>.column
+{
+  width: 100%;
+}

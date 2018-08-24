@@ -1,0 +1,61 @@
+/**
+Make DMs a different colour
+*/
+
+.status.status-direct {
+    background: #4f3939!important;
+}
+
+.status.status-direct.muted {
+    background: transparent!important;
+}
+
+/** 
+Make @ mentions a different colour
+NB: as of right now, there's no way to target 
+them in the main feed column so this only changes
+the colour in the notifications column
+*/
+.column:nth-of-type(3) .status.status-public {
+    background: #353F36!important;
+}
+
+.column:nth-of-type(3) .status.status-public.muted {
+    background: transparent!important;
+}
+
+/* need this so names are readable with highlight */
+.status__display-name,
+.status__prepend .status__display-name strong {
+    color: #c2c2c2!important;
+}
+
+/**
+Collapse boosts and favourite notifications
+*/
+
+.notification-favourite .status__content,
+.notification-reblog .status__content {
+    height: 20px!important;
+    margin-right: 10px!important;
+}
+
+.notification-favourite .status__content p,
+.notification-reblog .status__content p {
+    white-space: nowrap!important;
+    overflow: hidden!important;
+    text-overflow: ellipsis!important;    
+    min-width: 0!important;
+}
+
+.notification-favourite .display-name,
+.notification-reblog .display-name {
+    display: none!important;
+}
+
+/**
+Hide the elephant
+*/
+.drawer__inner__mastodon { 
+    display: none; 
+}
