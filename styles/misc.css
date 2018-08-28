@@ -59,3 +59,15 @@ Hide the elephant
 .drawer__inner__mastodon { 
     display: none; 
 }
+
+/**
+Warn when image description
+is missing
+*/
+.compose-form .compose-form__modifiers .compose-form__upload-description {
+    opacity: 1!important;
+}
+
+.compose-form__upload-description input:placeholder-shown::placeholder {
+    background: #F03434!important;
+}
