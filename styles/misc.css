@@ -16,11 +16,11 @@ NB: as of right now, there's no way to target
 them in the main feed column so this only changes
 the colour in the notifications column
 */
-.column:nth-of-type(3) .status.status-public {
+[aria-label="Notifications"] .status.status-public {
     background: #353F36!important;
 }
 
-.column:nth-of-type(3) .status.status-public.muted {
+[aria-label="Notifications"] .status.status-public.muted {
     background: transparent!important;
 }
 
