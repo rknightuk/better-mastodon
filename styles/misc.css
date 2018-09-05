@@ -71,3 +71,10 @@ is missing
 .compose-form__upload-description input:placeholder-shown::placeholder {
     background: #F03434!important;
 }
+
+/**
+Hide reply counts
+*/
+.status__action-bar__counter__label {
+    display: none!important;
+}
